@@ -1,6 +1,0 @@
-D:\Program\mca2json\mca2json\bin\Debug\mca2json.exe.config
-D:\Program\mca2json\mca2json\bin\Debug\mca2json.exe
-D:\Program\mca2json\mca2json\bin\Debug\mca2json.pdb
-D:\Program\mca2json\mca2json\obj\Debug\mca2json.csprojResolveAssemblyReference.cache
-D:\Program\mca2json\mca2json\obj\Debug\mca2json.exe
-D:\Program\mca2json\mca2json\obj\Debug\mca2json.pdb

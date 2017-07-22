@@ -1,15 +1,36 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace mca2json
 {
-    struct Region
+	[JsonObject(MemberSerialization.OptIn)]
+	class Region
     {
-        public int regionX;
-        public int regionY;
+		public Region()
+		{
+			chunkDatas = new List<Chunk>();
+		}
 
+		public void CleanUp()
+		{
+			datas = null;
+			foreach(Chunk chunk in chunkDatas)
+			{
+				chunk.CleanUp();
+			}
+		}
+
+		[JsonProperty]
+		public int regionX;
+
+		[JsonProperty]
+		public int regionZ;
+
+        public byte[] datas;
+
+		[JsonProperty]
+		public List<Chunk> chunkDatas;
     }
 }
