@@ -40,7 +40,9 @@ namespace mca2json
 		[JsonProperty]
 		public byte[] block;
 
+		[JsonProperty]
 		public byte[] data;
+
 		public byte[] add;
 
 		[JsonProperty]
